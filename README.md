@@ -52,7 +52,7 @@ Results correspond to the score presented during the QCAV 2023 conference. A lar
 # Train a classifier with the proposed code :rocket:	
 Requirements: pytorch, scikit-learn, timm library (pytorch image model) (latest versions install through conda or pip should work).
 
-You can directly download this github repository and launch the python script <strong> train_classifier.py </strong> on the command line, with specific arguments. You should decompress the archive containing the dataset (FLYD-C) into this main directory in order to run the provided code.
+You can directly download this github repository and launch the python script <strong> train.py </strong> on the command line, with specific arguments. You should decompress the archive containing the dataset (FLYD-C) into this main directory in order to run the provided code.
 
 Here's a brief explanation of the command-line arguments:
 - --training_rep: Path to the training dataset.
