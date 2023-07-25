@@ -8,9 +8,9 @@ Provides access to FLYing-spot laser thermography dataset and its instances. Thi
 <!-- Align images to the center -->
 <figure>
 <p align="center">
-  <img src="example_scan1.gif" alt="Alt Text 1" width="300" height="300">
-  <img src="example_scan2.gif" alt="Alt Text 2" width="300" height="300">
-  <img src="example_scan3.gif" alt="Alt Text 3" width="300" height="300">
+  <img src="example_scan1.gif" alt="Alt Text 1" width="250" height="250">
+  <img src="example_scan2.gif" alt="Alt Text 2" width="250" height="250">
+  <img src="example_scan3.gif" alt="Alt Text 3" width="250" height="250">
 </p>
 <figcaption style="text-align: center; font-style: italic;"> <p> <i> Figure: examples of thermal recording. All the thermal recordings are converted into reconstructed thermal images by summing and normalizing all the frames of a scan, in a selected region of interest. The frames are also registered in the examined part referential. </i> </p> </figcaption>
 </figure>
