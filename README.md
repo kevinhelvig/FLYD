@@ -1,7 +1,7 @@
 # FLYD
 Provides access to FLYing-spot laser thermography dataset and its instances. This work was presented in the Quality Control by Artificial Vision (QCAV 2023) conference, under the title "Laser flying-spot thermography: an open-access dataset for machine learning and deep learning". The dataset consists in reconstructed thermal images from the recording of laser thermography examinations: the thermal scans are performed parallel to the crack, in order to follow the crack length on the material surface. Parts examined are various fatigue test specimens. More details about the registration from thermal movies to thermal images/maps, examination settings... are given in the QCAV 2023 proceeding, available soon.
 
-- FLYD-C: binary classification task dataset, between crack and healthy images. The actual dataset contains 891 thermal images for training, and for the test-set. Each subset was produced from differentiated fatigue test samples.
+- FLYD-C: binary classification task dataset, between crack and healthy images. The actual dataset contains 891 thermal images for training, and for the test-set. Each subset was produced from differentiated fatigue test samples. The dataset is compressed in the zip archive "FLYD-C.zip". 
 - FLYD-D instance: in construction (detection task) 
 - FLYD-S instance: in construction (segmentation task)
 
@@ -41,7 +41,8 @@ Results correspond to the score presented during the QCAV 2023 conference. A lar
 
 # Train a classifier with the proposed code :rocket:	
 Requirements: pytorch, scikit-learn, timm library (pytorch image model) (latest versions install through conda or pip should work).
-You can directly download this github repository and launch the python script <strong> train_classifier.py </strong> on the command line, with specific arguments.
+You can directly download this github repository and launch the python script <strong> train_classifier.py </strong> on the command line, with specific arguments. You should decompress the archive containing the dataset (FLYD-C) into this main directory in order to run the provided code.
+
 Here's a brief explanation of the command-line arguments:
 - --training_rep: Path to the training dataset.
 - --test_rep: Path to the test dataset.
