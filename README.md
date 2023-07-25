@@ -21,7 +21,7 @@ Provides access to **FLYing-spot laser thermography Dataset (FLYD)** and its ins
 -  We are still working on subsampling the original thermal recordings, which are relatively massive in order to provide access to them.
 -  A few thermal scans following the forward-backward conventional procedure, crossing the defect, will arrive too.
 
-# Benchmarking some architectures (classification task) 
+# Benchmarking some architectures (classification task) :memo:
 Results correspond to the score presented during the QCAV 2023 conference. A large panel of architectures has been tested (both convolution and attention based architectures). The different metrics are evaluated on the test-set. Architectures were trained with the same hyperparameters for this work, but you should increase performance of a given architecture by adjusting its hyperparameters. 
 
 - Convolution-based architectures:
