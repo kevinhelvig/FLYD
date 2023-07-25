@@ -1,9 +1,20 @@
 # FLYD
-Provides access to FLYing-spot laser thermography dataset and its instances. This work was presented in the Quality Control by Artificial Vision (QCAV 2023) conference, under the title "Laser flying-spot thermography: an open-access dataset for machine learning and deep learning". The dataset consists in reconstructed thermal images from the recording of laser thermography examinations: the thermal scans are performed parallel to the crack, in order to follow the crack length on the material surface. Parts examined are various fatigue test specimens. More details about the registration from thermal movies to thermal images/maps, examination settings... are given in the QCAV 2023 proceeding, available soon.
+Provides access to FLYing-spot laser thermography dataset and its instances. This work was presented in the Quality Control by Artificial Vision (QCAV 2023) conference, under the title "Laser flying-spot thermography: an open-access dataset for machine learning and deep learning". The dataset consists in reconstructed thermal images from the recording of laser thermography examinations: the thermal scans are performed parallel to the crack, in order to follow the crack length on the material surface. Parts examined are several fatigue test specimens with various crack opening and length. More details about the registration from thermal movies to thermal images/maps, examination settings... are given in the QCAV 2023 proceeding, available soon.
 
-- FLYD-C: binary classification task dataset, between crack and healthy images. The actual dataset contains 891 thermal images for training, and for the test-set. Each subset was produced from differentiated fatigue test samples. The dataset is compressed in the zip archive "FLYD-C.zip". 
+- FLYD-C: binary classification task dataset, between crack and healthy images. The actual dataset contains 891 thermal images for training, and 286 for the test-set. Each subset was produced from differentiated fatigue test samples. The dataset is compressed in the zip archive "FLYD-C.zip". 
 - FLYD-D instance: in construction (detection task) 
 - FLYD-S instance: in construction (segmentation task)
+
+<table>
+  <tr>
+    <td><img src="example_scan1.gif" alt="GIF 1"></td>
+    <td><img src="example_scan2.gif" alt="GIF 2"></td>
+    <td><img src="example_scan3.gif" alt="GIF 3"></td>
+  </tr>
+  <tr>
+    <td colspan="3"> </td>
+  </tr>
+</table>
 
 # Road-Map :construction:
 -  We firstly add the original dataset for classification, FLYD-C. A training code is also given. Some thermal images have a poorer image quality, due to some thermal camera issues. An updated version of the dataset with better registration quality will arrive later, introducing also more challenging samples with high reflection surfaces. 
