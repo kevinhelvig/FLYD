@@ -5,19 +5,18 @@ Provides access to FLYing-spot laser thermography dataset and its instances. Thi
 - FLYD-D instance: in construction (detection task) 
 - FLYD-S instance: in construction (segmentation task)
 
-<table>
-  <tr>
-    <td><img src="example_scan1.gif" alt="GIF 1"></td>
-    <td><img src="example_scan2.gif" alt="GIF 2"></td>
-    <td><img src="example_scan3.gif" alt="GIF 3"></td>
-  </tr>
-  <tr>
-    <td colspan="3"> <em> Example of laser scan recordings. Each frame is then synthesized by summing and normalizing individual images within a given region of interest, after registration in the sample's reference frame. </em> </td>
-  </tr>
-</table>
+<!-- Align images to the center -->
+<figure>
+<p align="center">
+  <img src="example_scan1.gif" alt="Alt Text 1" width="300" height="300">
+  <img src="example_scan2.gif" alt="Alt Text 2" width="300" height="300">
+  <img src="example_scan3.gif" alt="Alt Text 3" width="300" height="300">
+</p>
+<figcaption style="text-align: center; font-style: italic;"> <p> <i> Figure: examples of thermal recording. All the thermal recordings are converted into reconstructed thermal images by summing and normalizing all the frames of a scan, in a selected region of interest. The frames are also registered in the examined part referential. </i> </p> </figcaption>
+</figure>
 
 # Road-Map :construction:
--  We firstly add the original dataset for classification, FLYD-C. A training code is also given. Some thermal images have a poorer image quality, due to some thermal camera issues. An updated version of the dataset with better registration quality will arrive later, introducing also more challenging samples with high reflection surfaces. 
+-  We firstly add the original dataset for classification, FLYD-C. A training code is also given. Some thermal images have a poorer image quality, due to some thermal camera issues: several images present a small blurring effect. An updated version of the dataset with better registration quality will arrive later, introducing also more challenging samples with high reflection surfaces. 
 -  The addition of the localization dataset is planned for a later time. The annotations will be given in MS-COCO 2017 format. 
 -  We are still working on subsampling the original thermal recordings, which are relatively massive in order to provide access to them.
 -  A few thermal scans following the forward-backward conventional procedure, crossing the defect, will arrive too.
