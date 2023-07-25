@@ -51,6 +51,7 @@ Results correspond to the score presented during the QCAV 2023 conference. A lar
 
 # Train a classifier with the proposed code :rocket:	
 Requirements: pytorch, scikit-learn, timm library (pytorch image model) (latest versions install through conda or pip should work).
+
 You can directly download this github repository and launch the python script <strong> train_classifier.py </strong> on the command line, with specific arguments. You should decompress the archive containing the dataset (FLYD-C) into this main directory in order to run the provided code.
 
 Here's a brief explanation of the command-line arguments:
@@ -62,7 +63,7 @@ Here's a brief explanation of the command-line arguments:
 - --batch_size: Number of input images feeding the model at each iteration, during one epoch. You can increase it, depending on your hardware specifications. (default: 16) 
 - --learning_rate: Learning rate for the optimizer (default: 1e-4).
 - --output_dir: Path to the directory to save the log and model state dict (default: None).
-  
+
 You can customize the script by changing the values of the command-line arguments as needed. More details about the training (augmentations, metrics evaluated...) are given in the proceeding from the conference. 
 
 ## Cite
