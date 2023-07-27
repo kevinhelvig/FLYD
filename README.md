@@ -22,7 +22,7 @@ This repository provides access to the **FLYing-spot laser thermography Dataset 
 -  A few thermal scans following the forward-backward conventional procedure, crossing the defect, will arrive in the coming months.
 
 # Benchmarking some architectures (classification task) :memo:
-Results correspond to the score presented during the QCAV 2023 conference. A large panel of architectures are compared (both convolution and attention based architectures). The different classification metrics are evaluated on the test-set of FLYD-C.
+The following results correspond to the classification scores presented during the QCAV 2023 conference. A large panel of architectures are compared (both convolution and attention based architectures). **The different metrics are evaluated on the test-set of FLYD-C**.
 
 - Convolution-based architectures:
 
