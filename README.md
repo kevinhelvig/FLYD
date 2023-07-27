@@ -18,11 +18,11 @@ This repository provides access to the **FLYing-spot laser thermography Dataset 
 # Road-Map :construction:
 -  We firstly provide the original dataset for classification, FLYD-C. A training code is added. An updated version of the dataset with better registration quality will arrive later, introducing also more challenging samples with high reflection surfaces. 
 -  The addition of the localization dataset is planned for soon. 
--  We are still working on subsampling the original thermal recordings, which are relatively massive in order to provide access to them.
+-  We are still working on subsampling the original thermal recordings. An access link will be provided soon. 
 -  A few thermal scans following the forward-backward conventional procedure, crossing the defect, will arrive in the coming months.
 
 # Benchmarking some architectures (classification task) :memo:
-Results correspond to the score presented during the QCAV 2023 conference. A large panel of architectures has been tested (both convolution and attention based architectures). The different metrics are evaluated on the test-set. Architectures were trained with the same hyperparameters for this work, but you should increase performance of a given architecture by adjusting its hyperparameters. 
+Results correspond to the score presented during the QCAV 2023 conference. A large panel of architectures are compared (both convolution and attention based architectures). The different classification metrics are evaluated on the test-set of FLYD-C.
 
 - Convolution-based architectures:
 
@@ -50,13 +50,18 @@ Results correspond to the score presented during the QCAV 2023 conference. A lar
 |                 | Pre-trained    | 0.989     | 0.990    | 0.981     | 0.999  |
 
 # Train a classifier with the proposed code :rocket:	
-Requirements: pytorch, scikit-learn, timm library (pytorch image model) (latest versions install through conda or pip should work).
+Requirements: **pytorch, scikit-learn, timm library (pytorch image model)** (latest versions install through conda or pip should work).
+- Follow the instruction on [Pytorch's official website](https://pytorch.org/) to properly install PyTorch based on your specifications.
+- Pip commands to install [scikit-learn](https://scikit-learn.org/stable/) and [timm](https://timm.fast.ai/):
+  ```
+pip install scikit-learn, timm 
+  ```
 
-You can directly download this github repository and launch the python script <strong> train.py </strong> on the command line, with specific arguments. You should decompress the archive containing the dataset (FLYD-C) into this main directory in order to run the provided code.
+You can directly clone this github repository and launch the python script <strong> train.py </strong> on the command line, with specific arguments. You should decompress the archive containing the dataset before (FLYD-C), into this main directory in order to run the provided code.
 
-Here's a brief explanation of the command-line arguments:
-- --training_rep: Path to the training dataset.
-- --test_rep: Path to the test dataset.
+Here's a brief explanation of the command-line arguments
+- --training_rep: path to the training dataset.
+- --test_rep: path to the test dataset.
 - --model: Name of the timm model to use (default: vgg13)
 - --pretrained: load a pretrained model (better performance, thanks to transfer learning) or not (less performance and/or longer training duration). (default: True)  
 - --num_epochs: Number of epochs to train the model. (default: 10, adapted for a pre-trained model) 
