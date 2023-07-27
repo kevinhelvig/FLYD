@@ -1,14 +1,14 @@
 # FLYD
 Provides access to **FLYing-spot laser thermography Dataset (FLYD)** and its instances. This work was presented in the **Quality Control by Artificial Vision (QCAV 2023)** conference, under the title **"Laser flying-spot thermography: an open-access dataset for machine learning and deep learning"**. The dataset consists in reconstructed thermal images from the recordings of laser thermography examinations: the thermal scans are performed parallel to the crack, in order to follow the crack length on the material surface. Parts examined are several metallic fatigue test specimens with various crack opening and length. More details about the registration from thermal movies to thermal images/maps, examination settings... are given in the QCAV 2023 proceeding, available soon.
 
-- **FLYD-C: binary classification task dataset**, between crack and healthy images. The actual dataset contains 891 thermal images for training, and 286 for the test-set. Each subset was produced from differentiated fatigue test samples. The dataset is compressed in the zip archive "FLYD-C.zip".
+- **FLYD-C: binary classification task dataset**, between crack and uncrack images. The dataset contains 891 reconstructed thermal images for the training, and 286 for the evaluation.
 - FLYD-D instance: in construction (detection+localization task) :building_construction:	
 - FLYD-S instance: in construction (segmentation task) :building_construction:	
 
 <!-- Align images to the center -->
 <figure>
 <p align="center">
-  <img src="example_scan1.gif" alt="Alt Text 1" width="250" height="250">
+  <img src="illustrations/example_scan1.gif" alt="Alt Text 1" width="250" height="250">
   <img src="example_scan2.gif" alt="Alt Text 2" width="250" height="250">
   <img src="example_scan3.gif" alt="Alt Text 3" width="250" height="250">
 </p>
