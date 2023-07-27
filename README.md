@@ -8,7 +8,7 @@ Provides access to **FLYing-spot laser thermography Dataset (FLYD)** and its ins
 <!-- Align images to the center -->
 <figure>
 <p align="center">
-  <img src="illustrations/example_scan1.gif" alt="Alt Text 1" width="250" height="250">
+  <img src="illustrations\example_scan1.gif" alt="Alt Text 1" width="250" height="250">
   <img src="example_scan2.gif" alt="Alt Text 2" width="250" height="250">
   <img src="example_scan3.gif" alt="Alt Text 3" width="250" height="250">
 </p>
