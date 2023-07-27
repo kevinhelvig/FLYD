@@ -1,5 +1,5 @@
 # FLYD
-Provides access to **FLYing-spot laser thermography Dataset (FLYD)** and its instances. This work was presented in the **Quality Control by Artificial Vision (QCAV 2023)** conference, under the title **"Laser flying-spot thermography: an open-access dataset for machine learning and deep learning"**. The dataset consists in reconstructed thermal images from the recordings of laser thermography examinations: the thermal scans are performed parallel to the crack, in order to follow the crack length on the material surface. Parts examined are several metallic fatigue test specimens with various crack opening and length. More details about the registration from thermal movies to thermal images/maps, examination settings... are given in the QCAV 2023 proceeding, available soon.
+This repository provides access to the **FLYing-spot laser thermography Dataset (FLYD)** and its instances. This work was presented in the [**Quality Control by Artificial Vision (QCAV 2023)**](https://qcav2023.sciencesconf.org/) conference, under the title **"Laser flying-spot thermography: an open-access dataset for machine learning and deep learning"**. The dataset consists in reconstructed thermal images from the recordings of laser thermography examinations: the thermal scans are performed parallel to the crack, in order to follow the crack length on the material surface. Parts examined are several metallic fatigue test specimens with various crack opening and length. More details about the experimental and recording settings are given in the QCAV 2023 proceeding, available soon.
 
 - **FLYD-C: binary classification task dataset**, between crack and uncrack images. The dataset contains 891 reconstructed thermal images for the training, and 286 for the evaluation.
 - FLYD-D instance: in construction (detection+localization task) :building_construction:	
@@ -9,17 +9,17 @@ Provides access to **FLYing-spot laser thermography Dataset (FLYD)** and its ins
 <figure>
 <p align="center">
   <img src="illustrations\example_scan1.gif" alt="Alt Text 1" width="250" height="250">
-  <img src="example_scan2.gif" alt="Alt Text 2" width="250" height="250">
-  <img src="example_scan3.gif" alt="Alt Text 3" width="250" height="250">
+  <img src="illustrations\example_scan2.gif" alt="Alt Text 2" width="250" height="250">
+  <img src="illustrations\example_scan3.gif" alt="Alt Text 3" width="250" height="250">
 </p>
-<figcaption style="text-align: center; font-style: italic;"> <p> <i> Figure: examples of thermal recording. All the thermal recordings are converted into reconstructed thermal images by summing and normalizing all the frames of a scan, in a selected region of interest. The frames are also registered in the examined part referential. </i> </p> </figcaption>
+<figcaption style="text-align: center; font-style: italic;"> <p> <i> Examples of thermal recording. These recordings are then converted in reconstructed thermal images. </i> </p> </figcaption>
 </figure>
 
 # Road-Map :construction:
--  We firstly add the original dataset for classification, FLYD-C. A training code is also given. Some thermal images have a poorer image quality, due to some thermal camera issues: several images present a small blurring effect. An updated version of the dataset with better registration quality will arrive later, introducing also more challenging samples with high reflection surfaces. 
--  The addition of the localization dataset is planned for a later time. The annotations will be given in MS-COCO 2017 format. 
+-  We firstly provide the original dataset for classification, FLYD-C. A training code is added. An updated version of the dataset with better registration quality will arrive later, introducing also more challenging samples with high reflection surfaces. 
+-  The addition of the localization dataset is planned for soon. 
 -  We are still working on subsampling the original thermal recordings, which are relatively massive in order to provide access to them.
--  A few thermal scans following the forward-backward conventional procedure, crossing the defect, will arrive too.
+-  A few thermal scans following the forward-backward conventional procedure, crossing the defect, will arrive in the coming months.
 
 # Benchmarking some architectures (classification task) :memo:
 Results correspond to the score presented during the QCAV 2023 conference. A large panel of architectures has been tested (both convolution and attention based architectures). The different metrics are evaluated on the test-set. Architectures were trained with the same hyperparameters for this work, but you should increase performance of a given architecture by adjusting its hyperparameters. 
