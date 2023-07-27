@@ -1,9 +1,9 @@
 # FLYD
 This repository provides access to the **FLYing-spot laser thermography Dataset (FLYD)** and its instances. This work was presented in the [**Quality Control by Artificial Vision (QCAV 2023)**](https://qcav2023.sciencesconf.org/) conference, under the title **"Laser flying-spot thermography: an open-access dataset for machine learning and deep learning"**. The dataset consists in reconstructed thermal images from the recordings of laser thermography examinations: the thermal scans are performed parallel to the crack, in order to follow the crack length on the material surface. Parts examined are several metallic fatigue test specimens with various crack opening and length. More details about the experimental and recording settings are given in the QCAV 2023 proceeding, available soon.
 
-- **FLYD-C: binary classification task dataset**, between crack and uncrack images. The dataset contains 891 reconstructed thermal images for the training, and 286 for the evaluation.
-- FLYD-D instance: in construction (detection+localization task) :building_construction:	
-- FLYD-S instance: in construction (segmentation task) :building_construction:	
+- **FLYD-C instance: binary classification task dataset**, between crack and uncrack images. The dataset contains 891 reconstructed thermal images for training, and 286 for evaluation.
+- **FLYD-D instance: crack detection+localization task. In construction** :building_construction:	
+- **FLYD-S instance: crack segmentation task. In construction** :building_construction:	
 
 <!-- Align images to the center -->
 <figure>
@@ -51,10 +51,10 @@ Results correspond to the score presented during the QCAV 2023 conference. A lar
 
 # Train a classifier with the proposed code :rocket:	
 Requirements: **pytorch, scikit-learn, timm library (pytorch image model)** (latest versions install through conda or pip should work).
-- Follow the instruction on [Pytorch's official website](https://pytorch.org/) to properly install PyTorch based on your specifications.
+- Follow the instructions on [Pytorch's official website](https://pytorch.org/) to properly install PyTorch based on your specifications.
 - Pip commands to install [scikit-learn](https://scikit-learn.org/stable/) and [timm](https://timm.fast.ai/):
   ```
-pip install scikit-learn, timm 
+  pip install scikit-learn, timm 
   ```
 
 You can directly clone this github repository and launch the python script <strong> train.py </strong> on the command line, with specific arguments. You should decompress the archive containing the dataset before (FLYD-C), into this main directory in order to run the provided code.
