@@ -62,12 +62,12 @@ You can directly clone this github repository and launch the python script <stro
 Here's a brief explanation of the command-line arguments
 - --training_rep: path to the training dataset.
 - --test_rep: path to the test dataset.
-- --model: Name of the timm model to use (default: vgg13)
+- --model: name of the timm model to use (default: vgg13)
 - --pretrained: load a pretrained model (better performance, thanks to transfer learning) or not (less performance and/or longer training duration). (default: True)  
-- --num_epochs: Number of epochs to train the model. (default: 10, adapted for a pre-trained model) 
-- --batch_size: Number of input images feeding the model at each iteration, during one epoch. You can increase it, depending on your hardware specifications. (default: 16) 
-- --learning_rate: Learning rate for the optimizer (default: 1e-4).
-- --output_dir: Path to the directory to save the log and model state dict (default: None).
+- --num_epochs: number of epochs to train the model. (default: 10, adapted for a pre-trained model) 
+- --batch_size: number of input images feeding the model at each iteration, during one epoch. You can increase it, depending on your hardware specifications. (default: 16) 
+- --learning_rate: learning rate for the optimizer (default: 1e-4).
+- --output_dir: path to the directory to save the log and model state dict (default: None).
 
 You can customize the script by changing the values of the command-line arguments as needed. More details about the training (augmentations, metrics evaluated...) are given in the proceeding from the conference. 
 
