@@ -1,5 +1,5 @@
 # FLYD
-This repository provides access to the **FLYing-spot laser thermography Dataset (FLYD)** and its instances. This work was presented in the [**Quality Control by Artificial Vision (QCAV 2023)**](https://qcav2023.sciencesconf.org/) conference, under the title **"Laser flying-spot thermography: an open-access dataset for machine learning and deep learning"**. The dataset consists in reconstructed thermal images from the recordings of laser thermography examinations. The thermal scans are performed parallel to the crack, in order to follow the crack length on the material surface. Parts examined are several metallic fatigue test specimens with various crack opening and length. More details about the experimental and recording settings are given in the QCAV 2023 proceeding, available soon.
+This repository provides access to the **FLYing-spot laser thermography Dataset (FLYD)** and its instances. This work was presented in the [**Quality Control by Artificial Vision (QCAV 2023)**](https://qcav2023.sciencesconf.org/) conference, under the title [**"Laser flying-spot thermography: an open-access dataset for machine learning and deep learning"**](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12749/127491A/Laser-flying-spot-thermography--an-open-access-dataset-for/10.1117/12.3000481.short). The dataset consists in reconstructed thermal images from the recordings of laser thermography examinations. The thermal scans are performed parallel to the crack, in order to follow the crack length on the material surface. Parts examined are several metallic fatigue test specimens with various crack opening and length. More details about the experimental and recording settings are given in the QCAV 2023 proceeding.
 
 - **FLYD-C instance: binary classification task dataset**, between crack and uncrack images. The dataset contains 891 reconstructed thermal images for training, and 286 for evaluation.
 - **FLYD-D instance: crack detection+localization task. In construction** :building_construction:	
@@ -75,13 +75,16 @@ You can customize the script by changing the values of the command-line argument
 If the dataset is used for academic purpose, please consider citing our work: 
 
 ```
-@inproceedings{FLYD-QCAV2023,
-  title        = {{Laser flying-spot thermography: an open-access dataset for machine learning and deep learning}},
-  author       = {Helvig, Kevin and Trouv{\'e}-Peloux, Pauline and Gav{\'e}rina, Ludovic and Roche, Jean-Michel and Abeloos, Baptiste and Pradere, Christophe},
-  year         = {2023},
-  month        = jun,
-  adress       = {Albi, France},
-  booktitle    = {{Sixteenth International Conference on Quality Control by Artificial Vision}},
-  publisher    = {SPIE},
+@incollection{Helvig2023Jul,
+	author = {Helvig, K. and Trouve-Peloux, P. and Gaverina, L. and Roche, J.-M. and Abeloos, B. and Pradere, C.},
+	title = {{Laser flying-spot thermography: an open-access dataset for machine learning and deep learning}},
+	booktitle = {{Proceedings Volume 12749, Sixteenth International Conference on Quality Control by Artificial Vision}},
+	journal = {Sixteenth International Conference on Quality Control by Artificial Vision},
+	volume = {12749},
+	pages = {334--340},
+	year = {2023},
+	month = jul,
+	publisher = {SPIE},
+	doi = {10.1117/12.3000481}
 }
 ```
