@@ -17,7 +17,7 @@ This repository provides access to the **FLYing-spot laser thermography Dataset 
 
 # Road-Map :construction:
 -  We firstly provide **the original dataset for classification, FLYD-C**. A training code is added.
--  **Annotations for crack localization added** 🔥: . See FLYD-D repository for annotations. 
+-  **[2023.10.16] Annotations for crack localization added** 🔥: . See FLYD-D repository for annotations. 
 -  We are still working on subsampling the original thermal recordings. An access link will be provided soon.
 -  We plan to **add more samples in both datasets in the longer run**. 
 -  A few thermal scans following the forward-backward conventional procedure, crossing the defect, will arrive in the coming months.
