@@ -2,7 +2,7 @@
 This repository provides access to the **FLYing-spot laser thermography Dataset (FLYD)** and its instances. This work was presented in the [**Quality Control by Artificial Vision (QCAV 2023)**](https://qcav2023.sciencesconf.org/) conference, under the title [**"Laser flying-spot thermography: an open-access dataset for machine learning and deep learning"**](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12749/127491A/Laser-flying-spot-thermography--an-open-access-dataset-for/10.1117/12.3000481.short). The dataset consists in reconstructed thermal images from the recordings of laser thermography examinations. The thermal scans are performed parallel to the crack, in order to follow the crack length on the material surface. Parts examined are several metallic fatigue test specimens with various crack opening and length. More details about the experimental and recording settings are given in the QCAV 2023 proceeding.
 
 - **FLYD-C instance: binary classification task dataset**, between crack and uncrack images. The dataset contains 891 reconstructed thermal images for training, and 286 for evaluation.
-- **FLYD-D instance: crack detection+localization task. In construction** :building_construction:	
+- **FLYD-D instance: crack detection+localization task.**	
 - **FLYD-S instance: crack segmentation task. In construction** :building_construction:	
 
 <!-- Align images to the center -->
@@ -16,9 +16,10 @@ This repository provides access to the **FLYing-spot laser thermography Dataset 
 </figure>
 
 # Road-Map :construction:
--  We firstly provide the original dataset for classification, FLYD-C. A training code is added. An updated version of the dataset with better registration quality will arrive later, introducing also more challenging samples with high reflection surfaces. 
--  The addition of the localization dataset is planned for soon. 
--  We are still working on subsampling the original thermal recordings. An access link will be provided soon. 
+-  We firstly provide **the original dataset for classification, FLYD-C**. A training code is added.
+-  **Annotations for crack localization added** 🔥: . See FLYD-D repository for annotations. 
+-  We are still working on subsampling the original thermal recordings. An access link will be provided soon.
+-  We plan to **add more samples in both datasets in the longer run**. 
 -  A few thermal scans following the forward-backward conventional procedure, crossing the defect, will arrive in the coming months.
 
 # Benchmarking some architectures (classification task) :memo:
