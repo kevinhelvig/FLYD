@@ -17,11 +17,15 @@ This repository provides access to the **FLYing-spot laser thermography Dataset 
 
 # Road-Map :construction:
 -  We firstly provide **the original dataset for classification, FLYD-C**. A training code is added.
--  **[2023.10.16] Annotations for crack localization added** 🔥: . See FLYD-D repository for annotations. 
--  We are still working on subsampling the original thermal recordings. An access link will be provided soon.
--  We plan to **add more samples in both datasets in the longer run**. 
--  A few thermal scans following the forward-backward conventional procedure, crossing the defect, will arrive in the coming months.
+-  **[2023.10.16] Annotations for crack localization added**: . See FLYD-D repository for annotations. 
+-  **[2023.11.20] Download links for the subsampled thermal recordings added** :robot:: See section **Subsampled thermal recordings**.
+-  We plan to **add more samples in both datasets in the longer run**.
 
+# Subsampled thermal recordings :movie_camera:
+You can download the subsampled thermal recordings using the following links. Provided thermal recordings are subsampled from 100 Hz to 50 Hz, in order to reduce the weight of the whole dataset. Files are stored in .avi file format. 
+- [Download the parallel scan recordings](https://zenodo.org/records/10160129/files/FLYD_Movies.zip?download=1) : scans used for the presented datasets and deep neural nets trainings.
+- [Several conventional scan recordings](https://zenodo.org/records/10160129/files/FLYD-perp.zip?download=1) are provided : these scans pass accross the examined defect, following the most conventional flying-spot approach (difference between a forward and a backward scan passing through the defect).
+- 
 # Benchmarking some architectures (classification task) :memo:
 The following results correspond to the classification scores presented during the QCAV 2023 conference. A large panel of architectures are compared (both convolution and attention based architectures). **The different metrics are evaluated on the test-set of FLYD-C**.
 
