@@ -81,7 +81,7 @@ You can customize the script by changing the values of the command-line argument
 ## Cite
 If the dataset is used for academic purpose, please consider citing our work: 
 
-```
+```bibtex
 @incollection{Helvig2023Jul,
 	author = {Helvig, K. and Trouve-Peloux, P. and Gaverina, L. and Roche, J.-M. and Abeloos, B. and Pradere, C.},
 	title = {{Laser flying-spot thermography: an open-access dataset for machine learning and deep learning}},
