@@ -10,9 +10,9 @@ The paper : [Synthetic visible-IR images pairs generation for multi-spectral NDT
 
 - __[10/10/2024]__ : Folder created. Adding the different links and explanations is on the way ! :biking_man:
 
-# Stable Diffusion: Weights and minimal script usage 🏋️
+# Stable Diffusion: Weights and minimal script usage 🏋️🖌️
 
-A minimal script for sampling is added: the script can generate both cracked or sane thermal frame, depending on the model chosen, and the sentence used for the semantic guidance.
+The main focus of the paper is mono (and multi) spectrum image synthesis using Stable Diffusion for data augmentation. A minimal script for sampling is added: the script can generate both cracked or sane thermal frame, depending on the model chosen, and the sentence used for the semantic guidance.
 The model used for image synthesis is [__Stable Diffusion v1.5__](https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5). Instead of the image synthesis using [Denoising Diffusion Probabilistic Models](https://github.com/lucidrains/denoising-diffusion-pytorch) [[Ho et al., 2020](https://arxiv.org/abs/2006.11239)] as in [one our previous works](https://doi.org/10.1080/17686733.2023.2266176), Stable Diffusion adds semantic guidance. This model can also be identified as a __foundation model__ which is __domain "agnostic"__ and/or can be __fine-tuned for a new and specific data domain with limited computation cost__ (such as thermal data ? 🙂). The canonical Dreambooth script for fine-tuning has been used for the training (available [here](https://huggingface.co/docs/diffusers/en/training/dreambooth)). <br>
 * Link to the negative generator's weights 🏋️‍♂️ : [[Zenodo]()] <br>
 * Link to the positive generator's weights 🏋️‍♀️: [[Zenodo]()] <br> 
