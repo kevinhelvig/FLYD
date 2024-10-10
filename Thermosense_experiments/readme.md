@@ -1,5 +1,5 @@
 # Thermosense conference experiments (2024) 🌡️
-This folder gives minimal codes and data for the work presented at the __SPIE Defense+Commercial Sensing, Thermosense: Thermal Infrared Applications XLVI__ (April 2024) . We provide weights from Stable Diffusion fine-tuning, data amounts used for training and crack detection using Flying-Spot thermography ("frame-per-frame" detection). 
+This folder gives minimal codes and data for the work presented at the __SPIE Defense+Commercial Sensing, Thermosense: Thermal Infrared Applications XLVI__ (April 2024) . We provide weights from Stable Diffusion fine-tuning, data amounts used for both diffusers training and crack detection using laser Flying-Spot thermography ("frame-per-frame" detection case). 
 
 The paper : [Synthetic visible-IR images pairs generation for multi-spectral NDT using flying spot thermography and deep learning [Helvig et al]](https://doi.org/10.1117/12.3013537) 
 
@@ -13,7 +13,7 @@ The paper : [Synthetic visible-IR images pairs generation for multi-spectral NDT
 # Stable Diffusion: Weights and minimal script usage 🏋️
 
 A minimal script for sampling is added: the script can generate both cracked or sane thermal frame, depending on the model chosen, and the sentence used for the semantic guidance.
-The model used for image synthesis is [__Stable Diffusion v1.5__](https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5). Instead of the image synthesis using [Denoising Diffusion Probabilistic Models](https://github.com/lucidrains/denoising-diffusion-pytorch) [[Ho et al., 2020](https://arxiv.org/abs/2006.11239)] as in one our previous works, Stable Diffusion adds semantic guidance. This model can also be identified as a __foundation model__ which is __domain "agnostic"__ and/or can be __fine-tuned for a new and specific data domain with limited computation cost__ (such as thermal data ? 🙂). The canonical Dreambooth script for fine-tuning has been used for the training (available [here](https://huggingface.co/docs/diffusers/en/training/dreambooth)). <br>
+The model used for image synthesis is [__Stable Diffusion v1.5__](https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5). Instead of the image synthesis using [Denoising Diffusion Probabilistic Models](https://github.com/lucidrains/denoising-diffusion-pytorch) [[Ho et al., 2020](https://arxiv.org/abs/2006.11239)] as in [one our previous works](https://doi.org/10.1080/17686733.2023.2266176), Stable Diffusion adds semantic guidance. This model can also be identified as a __foundation model__ which is __domain "agnostic"__ and/or can be __fine-tuned for a new and specific data domain with limited computation cost__ (such as thermal data ? 🙂). The canonical Dreambooth script for fine-tuning has been used for the training (available [here](https://huggingface.co/docs/diffusers/en/training/dreambooth)). <br>
 * Link to the negative generator's weights 🏋️‍♂️ : [[Zenodo]()] <br>
 * Link to the positive generator's weights 🏋️‍♀️: [[Zenodo]()] <br> 
 
