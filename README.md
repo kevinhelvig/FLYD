@@ -17,7 +17,7 @@ This repository provides access to the **FLYing-spot laser thermography Dataset 
 
 # Road-Map :construction:
 
-- __[2024.10.10]__ Add a sub-repo for the mono-spectrum experiments presented at the [__SPIE Thermosense: Thermal Infrared Applications XLVI__](https://doi.org/10.1117/12.3013537) conference. See [this folder](https://github.com/kevinhelvig/FLYD/tree/main/Thermosense_experiments).
+- __[2024.10.10]__ Add a sub-repo for the mono-spectrum experiments presented at the [__SPIE Thermosense: Thermal Infrared Applications XLVI__](https://doi.org/10.1117/12.3013537) conference. See [this folder](https://github.com/kevinhelvig/FLYD/tree/main/Thermosense_experiments). :thermometer:
 -  We firstly provide **the original dataset for classification, FLYD-C**. A training code is added.
 -  **[2023.10.16] Annotations for crack localization added**: . See FLYD-D repository for annotations. 
 -  **[2023.11.20] Download links for the subsampled thermal recordings added** :robot:: See section **Subsampled thermal recordings**.
