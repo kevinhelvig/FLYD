@@ -25,13 +25,13 @@ pip install --upgrade diffusers accelerate transformers
 
 A typical example of command to run the Dreambooth : 
 ```bash
-CUDA_VISIBLE_DEVICES=3 python ./diffusers/examples/dreambooth/train_dreambooth.py   --instance_data_dir=./positive   --output_dir=./sampling  --instance_prompt="An infrared thermal frame from the laser scan recording of a metallic part, with a surface crack."   --resolution=512   --train_batch_size=1   --gradient_accumulation_steps=1   --learning_rate=5e-6   --lr_scheduler="constant"   --lr_warmup_steps=0   --max_train_steps=5000   --pretrained_model_name_or_path="runwayml/stable-diffusion-v1-5" --train_text_encoder
+CUDA_VISIBLE_DEVICES=3 python ./diffusers/examples/dreambooth/train_dreambooth.py   --instance_data_dir=./positive   --output_dir=./out  --instance_prompt="An infrared thermal frame from the laser scan recording of a metallic part, with a surface crack."   --resolution=512   --train_batch_size=1   --gradient_accumulation_steps=1   --learning_rate=5e-6   --lr_scheduler="constant"   --lr_warmup_steps=0   --max_train_steps=10000   --pretrained_model_name_or_path="runwayml/stable-diffusion-v1-5" --train_text_encoder
 ```
 
 __Example of sentences for semantic guidance__ 📘 : 
 ```python
-# positive sentence : "a visible image from laser scan recording, with a surface crack"
-# negative sentence : "a visible image from laser scan recording without surface crack"
+# negative sentence : ""An infrared thermal image from the laser scan recording of a metallic part, without surface crack.""
+# positive sentence : "An infrared thermal frame from the laser scan recording of a metallic part, presenting a surface crack."
 ```
 You can also play with the guidance scale to test various syntheses. This setting selects how the denoising process is influenced by the text information. A guidance between 7 and 10 gives generally accurate synthesis quality for the infrared images. 
 
