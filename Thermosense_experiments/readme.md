@@ -30,7 +30,7 @@ CUDA_VISIBLE_DEVICES=3 python ./diffusers/examples/dreambooth/train_dreambooth.p
 
 __Example of sentences for semantic guidance__ 📘 : 
 ```python
-# negative sentence : ""An infrared thermal image from the laser scan recording of a metallic part, without surface crack.""
+# negative sentence : "An infrared thermal frame from the laser scan recording of a metallic part, without surface crack."
 # positive sentence : "An infrared thermal frame from the laser scan recording of a metallic part, presenting a surface crack."
 ```
 You can also play with the guidance scale to test various syntheses. This setting selects how the denoising process is influenced by the text information. A guidance between 7 and 10 gives generally accurate synthesis quality for the infrared images. 
